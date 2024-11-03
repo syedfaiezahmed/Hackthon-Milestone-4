@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EditablenResume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="Resume-form">
+      <h1>Editable Resume Builder</h1>
+      <h2>By Syed Faiez Ahmed</h2>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="father'sname">Father's Name:</label>
+        <input
+          type="text"
+          id="fathersname"
+          placeholder="Enter your father's name"
+          required
+        />
+
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+          <option value="">Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email" required />
+
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <label for="birthday">Date of Birth:</label>
+        <input
+          type="date"
+          id="birthday"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="address">Address:</label>
+        <textarea
+          id="address"
+          placeholder="Enter your address"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Education</legend>
+        <label for="degree">Degree:</label>
+        <textarea
+          type="text"
+          id="degree"
+          placeholder="Enter your degree"
+          rows="4"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Experience:</label>
+        <textarea
+          type="text"
+          id="experience"
+          placeholder="Enter your work experience"
+          rows="4"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills:</label>
+        <textarea
+          type="text"
+          id="skills"
+          placeholder="Enter your skills"
+          rows="4"
+          required
+        ></textarea>
+      </fieldset>
+
+      <button type="submit"><b>Generate Resume</b></button>
+    </form>
+    <br />
+    <!-- Dynamic and EditableResume Generator -->
+    <div id="Resume-preview" contenteditable="true">
+      <!-- Resume will be automatically generated when the user clicks on the "Generate Resume" button below.. -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
